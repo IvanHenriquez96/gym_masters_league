@@ -2,6 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { UpcomingEvents } from '@/components/UpcomingEvents'
+import { SponsorsCarousel } from '@/components/SponsorsCarousel'
 
 export const Route = createFileRoute('/about')({
   component: RouteComponent,
@@ -45,6 +46,7 @@ function RouteComponent() {
       </section>
       <div className="md:px-10 lg:px-20 xl:px-32 px-4 py-16 space-y-10">
         <UpcomingEvents />
+        <SponsorsCarousel />
       </div>
     </>
   )

@@ -19,7 +19,9 @@ export const UpcomingEvents = () => {
 
   return (
     <>
-      <div className=" md:text-4xl text-2xl font-bold">Próximos eventos!</div>
+      <div className="md:text-4xl text-2xl font-bold text-center md:text-left">
+        Próximos eventos!
+      </div>
       <Carousel
         opts={{
           align: 'start',
@@ -39,8 +41,8 @@ export const UpcomingEvents = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="hidden md:block" />
+        <CarouselNext className="hidden md:block" />
       </Carousel>
     </>
   )
