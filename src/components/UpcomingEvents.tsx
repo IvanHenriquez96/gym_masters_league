@@ -41,8 +41,8 @@ export const UpcomingEvents = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="hidden md:block" />
-        <CarouselNext className="hidden md:block" />
+        {/* <CarouselPrevious className="hidden md:block" />
+        <CarouselNext className="hidden md:block" /> */}
       </Carousel>
     </>
   )
